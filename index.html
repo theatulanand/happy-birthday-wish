@@ -1,0 +1,229 @@
+<!doctype html><html><head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> 
+  <meta name="author" content="Amardeep Kesarwani"> 
+  <title>Happy Birthday Prabhakar</title> 
+  <script async src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+  <script src="https://use.fontawesome.com/bae75bb48f.js"></script> 
+ <style type="text/css" id="dcoder_stylesheet">@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+:root {
+ --primary:#3cc6d8;
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Josefin Sans', sans-serif;
+}
+body {
+font-family:sans-serif;
+font-weight:300;
+line-height:1.5;
+font-size:1rem;
+color:#fff;
+}
+.fa-heart{
+    color:white;
+    animation:heart 2s ease-in-out infinite;
+    
+}
+@keyframes heart{
+    0%{
+        font-size:18px;
+        color:white;
+    }
+    50%{
+        font-size:24px;
+        color:red;
+    }
+    100%{
+        font-size:18px;
+        color:white;
+    }
+}
+a,a:hover {
+ text-decoration:none;
+}
+img {
+ width:100%;
+}
+
+section {
+ height:100vh;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ background:#000;
+}  
+.btn {
+ position:relative;
+ display:inline-block;
+ outline:none;
+ height:60px;
+ width:200px;
+ background:none;
+ border:4px solid var(--primary);
+ color:var(--primary);
+ border-radius:30px; 
+ cursor:pointer;
+ font-size:18px;
+ transition:1s ease;
+}
+.btn::before{
+ content:"";
+ position:absolute;
+ height:0px;
+ width:0px;
+ border-left:4px solid var(--primary);
+ border-bottom:4px solid var(--primary);
+ transform:rotate(-45deg);
+ top:12px;
+ left:12px;
+ opacity:0;
+}
+.active {
+ width:60px;
+ border-radius:50%;
+ animation: rotate 4s linear;
+ animation-delay:1.1s;
+}
+.btn.active::before{
+  opacity:1;
+  height:15px;
+  width:25px;
+  transition:opacity 100ms 5.4s, height ease-in 200ms 5.2s, width ease-in 300ms 5.4s;
+}
+@keyframes rotate {
+ 0% {
+  border-right-color:transparent;
+  border-bottom-color:transparent;
+  border-left-color:transparent;
+  transform:rotate(0);
+ }
+ 25% {
+  transform:rotate(360deg);
+ }
+ 50% {
+ transform:rotate(720deg);
+ }
+ 75% {
+ transform:rotate(1080deg);
+ }
+ 80% {
+ border-right-color:transparent;
+ border-bottom-color:transparent;
+ border-left-color:transparent;
+ }
+ 100% {
+ transform:rotate(1440deg);
+ border-color: inherit;
+ }
+}
+
+.sec1 {
+ position:fixed;
+ top:0;
+ left:0;
+ bottom:0;
+ width:100%;
+ z-index:5;
+ background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7jNx5dUwKAN5KKWAlxjVqjY7LxTwqG-y36w&usqp=CAU");
+ background-size:cover;
+}
+.sec2 {
+ text-align:center;
+ padding:20px;
+ flex-direction: column;
+ background:#000 url("https://i.pinimg.com/originals/ec/c2/12/ecc2124116aa5a0ee1bc466c7b69dd8a.gif");
+ background-size:100%;
+ background-repeat:no-repeat;
+ display:none;
+}
+.content img {
+ transform:translateY(20px);
+}
+section h1 {
+ font-size:2.7rem;
+ text-shadow:0px 0px 20px var(--primary),
+              0px 0px 40px var(--primary),
+              0px 0px 60px var(--primary);
+ margin-bottom:10px;
+}
+.sec1.hide {
+ display:none;
+}
+.sec1 h1 {
+ position:absolute;
+ top:20px;
+ text-align:center;
+ font-size:2rem;
+}
+.sec1 h3 {
+ position:absolute;
+ bottom:70px;
+ text-align:center;
+ font-size:18px;
+}
+.swal-overlay {
+  background-color: rgba(0,0,0,0.9);
+}
+.insta__link {
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:24px;
+  display:inline-block;
+  border:2px solid #fff;
+  text-decoration:none;
+  color:#fff;
+  border-radius:4px;
+  padding:6px 20px;
+  font-size:18px;
+  }
+  .insta__link svg {
+   transform:translateY(4px) scale(1.1);
+   margin-right:5px;
+  }</style></head> 
+ <body> 
+  <section class="sec1"> 
+   <h1>Happy Birthday Prabhakar</h1> 
+   <h3>Made with <i class="fa fa-heart"></i> by Atul Anand</h3> 
+   <button class="btn">ENTER </button> 
+   <a href="https://www.instagram.com/the_atul_anand/" class="insta__link" target="_blank"> 
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewbox="0 0 16 16"> 
+     <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" /> 
+    </svg> Instagram </a> 
+  </section> 
+  <section class="sec2"> 
+   <div class="content"> 
+    <h1>Happy Birthday Bhai 🎉🎂</h1> 
+    <p> Happy Birthday Bhai , God bless you , jio hazaro sal </p> 
+    <img src="https://wallegend.net/gif/1521.gif" alt="Your Net is weak 😑"> 
+   </div> 
+   <div class="img"> 
+    <img src="https://i.pinimg.com/originals/00/ed/7e/00ed7ea3401fe1605ecaffeca76dc7ec.gif" alt=""> 
+   </div> 
+  </section> 
+  <audio src="https://mobcup.net/d/j2641nj5/mp3" id="m1" loop></audio> 
+  <audio src="https://mobcup.net/d/j2641nj5/mp3" id="m2"></audio> 
+ 
+<script type="text/javascript" id="dcoder_script">const btn = document.querySelector(".btn");
+ const m1 = document.querySelector("#m1")
+ const m2 = document.querySelector("#m2")
+ btn.addEventListener("click",() => {
+   btn.innerText = "";
+   btn.classList.add("active");
+   document.querySelector(".sec2").style.display = "flex";
+   setTimeout(() => {
+    document.querySelector(".sec1").classList.add("hide");
+    swal({
+     title: "Happy Birthday 🎉🎂",
+     text:"it's party time let's celebrate this moment 🎉🎉",
+     icon: "success",
+     button:"Celebrate 🎉"
+    }).then(() => {
+     m1.play()
+     m2.play()
+    })   
+   },6400)
+ })</script></body></html>
